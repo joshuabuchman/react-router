@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+
+div > div > div {
+  display: flex;
+  justify-content: space-around;
+}
+/* a {
+  height: 2rem;
+  width: 4rem;
+} */
