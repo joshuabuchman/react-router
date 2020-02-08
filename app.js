@@ -6,16 +6,23 @@ const { render } = ReactDOM;
 const Nav = props => {
   let keys = Object.keys(props);
   let values = Object.values(props);
-  console.log(props);
+  // console.log(props);
 
   const compBut = React.createElement(
     "a",
-    { href: `#${keys[0]}`, className: "companies" },
+    {
+      href: `#${keys[0]}`,
+      className: `${props.view === "companies" ? "active" : ""}`
+    },
     `Companies (${values[0].length})`
   );
+  console.log(props.view);
   const prodBut = React.createElement(
     "a",
-    { href: `#${keys[1]}`, className: "products" },
+    {
+      href: `#${keys[1]}`,
+      className: `${values[2] === "products" ? "active" : ""}`
+    },
     `Products (${values[1].length})`
   );
   return React.createElement("div", null, compBut, prodBut);

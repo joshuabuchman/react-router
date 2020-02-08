@@ -1,12 +1,16 @@
 body {
   font-family: sans-serif;
+  margin: 3rem;
 }
 
 div > div > div {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-/* a {
-  height: 2rem;
-  width: 4rem;
-} */
+.active {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: tomato;
+}
